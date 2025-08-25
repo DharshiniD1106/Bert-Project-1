@@ -1,13 +1,26 @@
-# Sentiment Analysis using BERT
 
-## Objective
-Classify text data (e.g., tweets, reviews) into sentiment classes: positive, neutral, and negative using BERT.
+Sentiment Analysis Using DistilBERT
+Overview
 
-## Steps Followed:
-1. Data acquisition and preprocessing
-2. Tokenization with BERT tokenizer
-3. Fine-tuning BERT model
-4. Evaluation using accuracy, precision, recall, F1-score
+This project implements a Sentiment Analysis system that classifies movie reviews as positive or negative using DistilBERT, a lightweight version of BERT. It leverages transformer-based models to capture contextual information from text for accurate classification.
 
-## Dataset
-Dataset used: tweets.csv with `text` and `sentiment` columns.
+Features
+
+Classifies movie reviews as positive or negative.
+Uses DistilBERT for fast and efficient model training.
+
+Provides evaluation metrics: Accuracy, Precision, Recall, F1-Score.
+
+Supports custom input predictions for testing new reviews.
+
+Dataset
+
+Source: IMDB Movie Reviews via datasets library.
+
+Labels:
+
+0 → Negative
+
+1 → Positive
+
+Train/Test Split: 25,000 reviews each (subsets can be used for faster experimentation).
